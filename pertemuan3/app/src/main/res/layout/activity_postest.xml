@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostestActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi Data Anda"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/heading" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Masukkan Nama Anda"
+        android:id="@+id/isinama"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:hint="Masukkan NIM"
+            android:inputType="number"
+            android:id="@+id/isinim"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Kelas"
+            android:id="@+id/isikelas"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihlah jenis kelamin anda"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/heading_jk" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogrup"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/rdb1"
+            android:layout_weight="1"
+            android:text="Laki-laki"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdb2"
+            android:layout_weight="1"
+            android:text="Perempuan"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdb3"
+            android:layout_weight="1"
+            android:text="Non Biner"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cek kembali jika semua data sudah terisi dengan benar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/heading_cek" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkAgree"
+        android:text="Semua yang diisikan benar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="hasil"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
