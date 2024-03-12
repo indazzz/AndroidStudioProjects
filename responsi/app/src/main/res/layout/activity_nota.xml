@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotaActivity"
+    android:padding="10dp">
+
+    <!--nomor barang-->
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Antrian" />
+    <TextView
+        android:id="@+id/textViewliat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+    <!--nama barang-->
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView01"
+        android:layout_marginTop="20dp"
+        android:text="Jenis Rambut" />
+    <TextView
+        android:id="@+id/textViewliat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewliat1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <!--jenis barang-->
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView02"
+        android:layout_marginTop="20dp"
+        android:text="Tanggal" />
+    <TextView
+        android:id="@+id/textViewliat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewliat2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <!--jumlah barang-->
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView04"
+        android:layout_marginTop="20dp"
+        android:text="Jam" />
+    <TextView
+        android:id="@+id/textViewliat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewliat3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <!--harga barang-->
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginTop="20dp"
+        android:text="Pembayaran" />
+    <TextView
+        android:id="@+id/textViewliat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewliat4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+</RelativeLayout>

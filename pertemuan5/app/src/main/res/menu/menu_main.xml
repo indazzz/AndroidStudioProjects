@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:icon="@drawable/outline_add_circle_outline_24"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        android:title="Add"/>
+
+    <item
+        android:id="@+id/menu1"
+        android:title="File">
+        <menu>
+            <item
+                android:id="@+id/createnew"
+                android:title="Create New"/>
+            <item
+                android:id="@+id/open"
+                android:title="Open"/>
+        </menu>
+    </item>
+
+   <item
+       android:id="@+id/setting"
+       android:orderInCategory="100"
+       android:title="Setting"/>
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"/>
+</menu>
